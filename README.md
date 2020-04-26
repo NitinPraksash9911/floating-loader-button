@@ -22,6 +22,7 @@
 - MinSdk 16
 
 ## Integration
+
 Step.1 add jitpack to project level build.gradle
 
 ```groovy
@@ -39,7 +40,7 @@ dependencies {
     implementation 'com.github.NitinPraksash9911:floating-loader-button:1.x.x'
 }
 ```
-### Usage
+## Create view in xml
 
 ```xml
   <in.nitin.library.FloatingLoaderButton
@@ -55,13 +56,55 @@ dependencies {
 
 Name | Values 
 --------- | --------
-app:loaderBackgroundColor | to change the FloatingLoaderButton background color and by default it's color is black
-app:loaderFabSize | to change the size of FloatingLoaderButton, there are three different size available 'Medium', 'Small' & 'Large' 
+app:loaderBackgroundColor | to change the `FloatingLoaderButton` background color and by default it's color is black
+app:loaderFabSize | to change the size of `FloatingLoaderButton`, there are three different size available `Medium`, `Small` & `Large` 
 app:loadingIconColor | to change the arrow color and by default it's color is white
-app:loadingStatus | use to define the state of loader it has three state  1 'None' for initial stage, 2 'Loading' to start circular loading, 3 'Finish' to stop circular loading (recomended to use 'None' in xml and set the loader state programitically) and you can use these states to change the loader state in xml by using data bidning
+app:loadingStatus | use to define the state of loader it has three state  1 `None` for initial stage, 2 `Loading` to start circular loading, 3 `Finish` to stop circular loading (recomended to use `None` in xml and set the loader state programitically) and you can use these states to change the loader state in xml when using data bidning
 
+## Kotlin
 
-# Developed By
+This below example shows only how you can use `FloatingLoaderButton` when calling api and you can also use this anywhere where something going to take some time in andorid application such as `Background Task`, `Database Operation`, `Network Operation` etc...
+
+```kotlin
+ val floatingLoaderButton: FloatingLoaderButton = findViewById<FloatingLoaderButton>(R.id.floatingLoaderBtn)
+    
+        floatingLoaderButton.setOnClickListener {
+
+            // to start circular animation when api calling start
+            floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.LOADING)
+
+            val apiInterface = ApiInterface.create().getData()
+            
+            apiInterface.enqueue(object : Callback<List<Data>> {
+            
+                override fun onResponse(call: Call<List<Data>>?, response: Response<List<Data>>?) {
+
+                    if (response?.body() != null)
+                        recyclerAdapter.setData(response.body()!!)
+                       
+                    // to stop circular animation when api calling success
+                    floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.FINISH)
+                }
+
+                override fun onFailure(call: Call<List<Data>>?, t: Throwable?) {
+
+                    //to stop circular animation when api calling fail
+                    floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.FINISH)
+
+                }
+            })
+        }
+ ```       
+
+## Proguard
+
+In order to use this library with proguard you need to add this line to your `proguard.cfg`:
+
+```grovy
+-keep class `in`.nitin.library.FloatingLoaderButton.** { *; }
+````
+
+## Developed By
 
 * Nitin Prakash
  * Gmail (nitin.prakash9911@gmail.com)
