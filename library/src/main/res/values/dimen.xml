@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_fab_loader">48dp</dimen>
+    <dimen name="medium_fab_loader">56dp</dimen>
+    <dimen name="loader_padding">14dp</dimen>
+    <dimen name="large_fab_loader">64dp</dimen>
+    <dimen name="loader_elevation">8dp</dimen>
+
+
+</resources>

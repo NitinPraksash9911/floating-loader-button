@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="FabLoader">
+        <attr name="loadingIconColor" format="color" />
+        <attr name="loaderBackgroundColor" format="color" />
+
+        <attr name="loadingStatus">
+            <enum name="Loading" value="0" />
+            <enum name="Finish" value="1" />
+            <enum name="None" value="2" />
+        </attr>
+        <attr name="loaderFabSize">
+            <enum name="Small" value="0" />
+            <enum name="Medium" value="1" />
+            <enum name="Large" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

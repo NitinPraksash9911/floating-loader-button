@@ -1,0 +1,39 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="end_loading_56dp"
+            android:width="56dp"
+            android:height="56dp"
+            android:viewportWidth="56"
+            android:viewportHeight="56">
+            <path
+                android:name="arrow_end"
+                android:pathData="M 7 28 L 49 28 M 35 14 L 49 28 L 35 42"
+                android:strokeWidth="4" />
+
+        </vector>
+    </aapt:attr>
+    <target android:name="arrow_end">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="403"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="pathData"
+                    android:startOffset="0"
+                    android:valueFrom="M 49 28 L 49 28 M 49 28 L 49 28 L 49 28"
+                    android:valueTo="M 7 28 L 49 28 M 35 14 L 49 28 L 35 42"
+                    android:valueType="pathType" />
+                <objectAnimator
+                    android:duration="403"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"
+                    android:propertyName="strokeColor"
+                    android:startOffset="0"
+                    android:valueFrom="#000000"
+                    android:valueTo="#000000"
+                    android:valueType="colorType" />
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
