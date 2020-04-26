@@ -6,7 +6,7 @@
 [![Generic badge](https://img.shields.io/badge/MinimumSdk-16-Green.svg)](https://shields.io/)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/NitinPraksash9911/floating-loader-button/issues)
-
+</br>
 
 <a href="https://github.com/NitinPraksash9911/floating-loader-button">
 <img align="right"  src="https://user-images.githubusercontent.com/32475878/80308271-a3990400-87eb-11ea-9d98-a1c8b86d438d.gif" width="200" height="410" /></a>
@@ -16,25 +16,41 @@
 <h4>Inbuit circular progress loader in floating button</h4>
 </br>
 
-
-
-
-
-
-
-
-
 ## Requirements
 
 - Android Studio
 - MinSdk 16
 
+## Integration
+Step.1 add jitpack to project level build.gradle
 
-## Usage
+```
+   allprojects {
+    repositories {
+       ....
+        maven { url 'https://jitpack.io' }
+        
+    }
+}
+```
+Step.2 add dependency to module level build.gradle
+```
+dependencies {
+    implementation 'com.github.NitinPraksash9911:floating-loader-button:$latest_version'
+}
+```
+### Usage
 
-
-### Values
-
+```xml
+  <in.nitin.library.FloatingLoaderButton
+        android:id="@+id/floatingLoaderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:loaderBackgroundColor="#50CCDF"
+        app:loaderFabSize="Medium"
+        app:loadingIconColor="#FFD600"
+        app:loadingStatus="None" />
+```
 
 
 ## 📄 License
