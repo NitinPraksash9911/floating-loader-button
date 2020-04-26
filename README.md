@@ -70,7 +70,7 @@ app:loadingStatus | use to define the state of loader, it has three states  1. `
 
 ## Kotlin
 
-This below example shows only how you can use `FloatingLoaderButton` when calling api and you can also use this anywhere where something going to take some time in andorid application such as `Background Task`, `Database Operation`, `Network Operation` etc...
+This below example shows only how you can use `FloatingLoaderButton` when calling an api and you can also use this anywhere where something going to take some time in andorid application such as `Background Task`, `Database Operation`, `Network Operation` etc...
 
 ```kotlin
  val floatingLoaderButton: FloatingLoaderButton = findViewById<FloatingLoaderButton>(R.id.floatingLoaderBtn)
