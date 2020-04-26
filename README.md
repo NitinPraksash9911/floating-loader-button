@@ -1,10 +1,11 @@
 <a href="https://user-images.githubusercontent.com/32475878/80305954-d5a36980-87dd-11ea-84c4-905a7abc881c.png"><img src="https://user-images.githubusercontent.com/32475878/80305954-d5a36980-87dd-11ea-84c4-905a7abc881c.png"></a>
 </br>
 [![Generic badge](https://img.shields.io/badge/release-v1.1.0-blue.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://shields.io/)
-[![made-with-kotlin](https://img.shields.io/badge/Made%20with-kotlin-1f425f.svg)](https://github.com/JetBrains/kotlin)
+[![Generic badge](https://img.shields.io/badge/platform-android-brightgreen.svg?logo=android)](https://shields.io/)
+[![made-with-kotlin](https://img.shields.io/badge/Made%20with-kotlin-1f425f.svg?logo=kotlin)](https://github.com/JetBrains/kotlin)
 [![Generic badge](https://img.shields.io/badge/MinimumSdk-16-Green.svg)](https://shields.io/)
-[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+![GitHub All Releases](https://img.shields.io/github/downloads/NitinPraksash9911/floating-loader-button/total?label=downloads&logoColor=green)
+ [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/NitinPraksash9911/floating-loader-button/issues)
 </br>
 
@@ -59,7 +60,7 @@ Name | Values
 app:loaderBackgroundColor | to change the `FloatingLoaderButton` background color and by default it's color is black
 app:loaderFabSize | to change the size of `FloatingLoaderButton`, there are three different size available `Medium`, `Small` & `Large` 
 app:loadingIconColor | to change the arrow color and by default it's color is white
-app:loadingStatus | use to define the state of loader it has three state  1 `None` for initial stage, 2 `Loading` to start circular loading, 3 `Finish` to stop circular loading (recomended to use `None` in xml and set the loader state programitically) and you can use these states to change the loader state in xml when using data bidning
+app:loadingStatus | use to define the state of loader, it has three states  1. `None` for initial stage, 2. `Loading` to start circular loading, 3. `Finish` to stop circular loading (recomended to use `None` in xml and set the loader state programitically) and you can use these states to change the loader state in xml when using data bidning
 
 ## Kotlin
 
