@@ -14,7 +14,7 @@
 
 <p><h1 align="left">Floating Loader Button</h1></p>
 
-<h4>Inbuilt circular progress loader in floating button</h4>
+<img src="https://user-images.githubusercontent.com/32475878/80315162-782a0f80-8813-11ea-9e67-8956264d58d4.png"/> Android library to show circular loader within floating button
 </br>
 
 ## Requirements
