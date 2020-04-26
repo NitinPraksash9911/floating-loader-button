@@ -57,10 +57,10 @@ dependencies {
 
 Name | Values 
 --------- | --------
-app:loaderBackgroundColor | to change the `FloatingLoaderButton` background color and by default it's color is black
-app:loaderFabSize | to change the size of `FloatingLoaderButton`, there are three different size available `Medium`, `Small` & `Large` 
-app:loadingIconColor | to change the arrow color and by default it's color is white
-app:loadingStatus | use to define the state of loader, it has three states  1. `None` for initial stage, 2. `Loading` to start circular loading, 3. `Finish` to stop circular loading (recomended to use `None` in xml and set the loader state programitically) and you can use these states to change the loader state in xml when using data bidning
+app:loaderBackgroundColor | to change the `FloatingLoaderButton` background color and by default background color is black
+app:loaderFabSize | to change the size of `FloatingLoaderButton`, there are three different sizes available `Medium`, `Small`, & `Large` 
+app:loadingIconColor | to change the arrow color and by default icon color is white
+app:loadingStatus | use to define the state of loader, it has three states  1. `None` for initial stage, 2. `Loading` to start circular loading, 3. `Finish` to stop circular loading (recommended to use `None` in xml and set the loader state programmatically) and you can use these states to change the loader state in xml when using data bidning
 
 ### Size
 
@@ -77,7 +77,7 @@ This below example shows only how you can use `FloatingLoaderButton` when callin
     
         floatingLoaderButton.setOnClickListener {
 
-            // to start circular animation when api calling start
+            // to start circular animation when api calling starts
             floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.LOADING)
 
             val apiInterface = ApiInterface.create().getData()
@@ -95,7 +95,7 @@ This below example shows only how you can use `FloatingLoaderButton` when callin
 
                 override fun onFailure(call: Call<List<Data>>?, t: Throwable?) {
 
-                    //to stop circular animation when api calling fail
+                    //to stop circular animation when api calling fails
                     floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.FINISH)
 
                 }
@@ -114,8 +114,8 @@ In order to use this library with proguard you need to add this line to your `pr
 ## Developed By
 
 * Nitin Prakash
- * Gmail (nitin.prakash9911@gmail.com)
- * [LinkedIn](https://www.linkedin.com/in/nitin-prakash-b81a26156/)
+* Gmail (nitin.prakash9911@gmail.com)
+* [LinkedIn](https://www.linkedin.com/in/nitin-prakash-b81a26156/)
 
 ## 📄 License
 
