@@ -13,7 +13,7 @@
 
 <p><h1 align="left">Floating Loader Button</h1></p>
 
-<h4>Inbuit circular progress loader in floating button</h4>
+<h4>Inbuilt circular progress loader in floating button</h4>
 </br>
 
 ## Requirements
@@ -24,19 +24,19 @@
 ## Integration
 Step.1 add jitpack to project level build.gradle
 
-```
+```groovy
    allprojects {
     repositories {
-       ....
+       ...
         maven { url 'https://jitpack.io' }
         
     }
 }
 ```
 Step.2 add dependency to module level build.gradle
-```
+```groovy
 dependencies {
-    implementation 'com.github.NitinPraksash9911:floating-loader-button:$latest_version'
+    implementation 'com.github.NitinPraksash9911:floating-loader-button:1.x.x'
 }
 ```
 ### Usage
@@ -51,6 +51,16 @@ dependencies {
         app:loadingIconColor="#FFD600"
         app:loadingStatus="None" />
 ```
+## Attrs
+
+Name | Values 
+--------- | --------
+app:loaderBackgroundColor | to change the FloatingLoaderButton background color and by default it's color is black
+app:loaderFabSize | to change the size of FloatingLoaderButton, there are three different size available 'Medium', 'Small' & 'Large' 
+app:loadingIconColor | to change the arrow color and by default it's color is white
+app:loadingStatus | use to define the state of loader it has three state  1 'None' for initial stage, 2 'Loading' to start circular loading, 3 'Finish' to stop circular loading (recomended to use 'None' in xml and set the loader state programitically) and you can use these states to change the loader state in xml by using data bidning
+
+
 # Developed By
 
 * Nitin Prakash
