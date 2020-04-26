@@ -62,6 +62,12 @@ app:loaderFabSize | to change the size of `FloatingLoaderButton`, there are thre
 app:loadingIconColor | to change the arrow color and by default it's color is white
 app:loadingStatus | use to define the state of loader, it has three states  1. `None` for initial stage, 2. `Loading` to start circular loading, 3. `Finish` to stop circular loading (recomended to use `None` in xml and set the loader state programitically) and you can use these states to change the loader state in xml when using data bidning
 
+### Size
+
+`Large` | `Medium` | `Small` 
+--------- | -------- | -------
+ | <center> <img src="https://user-images.githubusercontent.com/32475878/80315868-0607f980-8818-11ea-8f87-e9e5463887a5.gif" width="150" height="120" /></center> | <center> <img  src="https://user-images.githubusercontent.com/32475878/80316393-29807380-881b-11ea-8ae0-a14aab99e0ee.gif" width="130" height="100" /></center> | <center> <img  src="https://user-images.githubusercontent.com/32475878/80316026-0359d400-8819-11ea-8d5e-38ddccffcbf9.gif" width="90" height="80" /></center> |
+
 ## Kotlin
 
 This below example shows only how you can use `FloatingLoaderButton` when calling api and you can also use this anywhere where something going to take some time in andorid application such as `Background Task`, `Database Operation`, `Network Operation` etc...
