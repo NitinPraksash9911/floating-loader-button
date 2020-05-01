@@ -57,10 +57,10 @@ dependencies {
 
 Name | Values 
 --------- | --------
-app:loaderBackgroundColor | to change the `FloatingLoaderButton` background color and by default background color is black
-app:loaderFabSize | to change the size of `FloatingLoaderButton`, there are three different sizes available `Medium`, `Small`, & `Large` 
-app:loadingIconColor | to change the arrow color and by default icon color is white
-app:loadingStatus | use to define the state of loader, it has three states  1. `None` for initial stage, 2. `Loading` to start circular loading, 3. `Finish` to stop circular loading (recommended to use `None` in xml and set the loader state programmatically) and you can use these states to change the loader state in xml when using data binding
+app:loaderBackgroundColor | to change the `FloatingLoaderButton` background color & by default background color is black
+app:loaderFabSize | to change the size of `FloatingLoaderButton` & it's available in three sizes `Medium`, `Small`, & `Large` choose one from these
+app:loadingIconColor | to change the arrow-icon color and by default arrow-icon color is white
+app:loadingStatus | use to define the state of loader & it has three states  1. `None` for initial stage when doing nothing, 2. `Loading` to start circular loading, 3. `Finish` to stop circular loading (recommended to use `None` in xml and set the loader state programmatically) and you can use these states to change the loader state in xml when using data binding
 
 ### Size
 
