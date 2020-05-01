@@ -77,7 +77,7 @@ This below example shows only how you can use `FloatingLoaderButton` when callin
     
         floatingLoaderButton.setOnClickListener {
 
-            // to start circular animation when api calling starts
+            // to start circular animation when api call starts
             floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.LOADING)
 
             val apiInterface = ApiInterface.create().getData()
@@ -89,13 +89,13 @@ This below example shows only how you can use `FloatingLoaderButton` when callin
                     if (response?.body() != null)
                         recyclerAdapter.setData(response.body()!!)
                        
-                    // to stop circular animation when api calling success
+                    // to stop circular animation when api call success
                     floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.FINISH)
                 }
 
                 override fun onFailure(call: Call<List<Data>>?, t: Throwable?) {
 
-                    //to stop circular animation when api calling fails
+                    //to stop circular animation when api call fails
                     floatingLoaderButton.setLoadingStatus(FloatingLoaderButton.LoaderStatus.FINISH)
 
                 }
