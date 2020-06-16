@@ -4,7 +4,7 @@
 [![Generic badge](https://img.shields.io/badge/platform-android-brightgreen.svg?logo=android)](https://shields.io/)
 [![made-with-kotlin](https://img.shields.io/badge/Made%20with-kotlin-1f425f.svg?logo=kotlin)](https://github.com/JetBrains/kotlin)
 [![Generic badge](https://img.shields.io/badge/MinimumSdk-16-Green.svg)](https://shields.io/)
-![GitHub All Releases](https://img.shields.io/github/downloads/NitinPraksash9911/floating-loader-button/total?label=downloads&logoColor=green)
+<a href=""><img alt="Github Downloads (total)" src="https://img.shields.io/github/downloads/NitinPraksash9911/floating-loader-button/total.svg"/></a>
  [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/NitinPraksash9911/floating-loader-button/issues)
 </br>
